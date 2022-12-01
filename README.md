@@ -1,29 +1,17 @@
-# Next.js + Jest
+# Ethan G Campbell
 
-This example shows how to configure Jest to work with Next.js.
+Welcome to my personal website!
 
-This includes Next.js' built-in support for Global CSS, CSS Modules and TypeScript.
+This site has a home page, about page, and an example weather app.
 
-## How to Use
+## Libraries
 
-Quickly get started using [Create Next App](https://github.com/vercel/next.js/tree/canary/packages/create-next-app#readme)!
+This site utilizes nextjs, react-query, chakra-ui, typescript, and axios.
 
-In your terminal, run the following command:
+## Testing Libraries
 
-```bash
-npx create-next-app --example with-jest with-jest-app
-```
+For testing purposes I use msw, jest, and react-testing-library.
 
-```bash
-yarn create next-app --example with-jest with-jest-app
-```
+## Code Quality
 
-```bash
-pnpm create next-app --example with-jest with-jest-app
-```
-
-## Run Jest Tests
-
-```bash
-npm test
-```
+To ensure and maintain code quality I use eslint, prettier, and the typescript compiler.
