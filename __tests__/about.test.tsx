@@ -1,12 +1,12 @@
 import { render, screen } from "@testing-library/react";
-import Home from "@/pages/index";
+import About from "@/pages/about";
 
 test("renders a heading", () => {
-  render(<Home />);
+  render(<About />);
 
   expect(
     screen.getByRole("heading", {
-      name: /Ethan Campbell/i,
+      name: /About Me/i,
     })
   ).toBeInTheDocument();
 });
