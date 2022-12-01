@@ -65,7 +65,7 @@ export default function Home() {
             </Button>
           </NextLink>
 
-          <Box>
+          <Box display={{ base: "none", md: "block" }}>
             <Icon
               as={Arrow}
               color={"gray.800"}
