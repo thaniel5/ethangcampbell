@@ -3,12 +3,13 @@ import {
   Flex,
   Text,
   IconButton,
+  Link,
   Stack,
   Collapse,
   useDisclosure,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import NextLink from "@/components/nextLink";
+import NextLink from "next/link";
 
 export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
@@ -65,7 +66,8 @@ function DesktopNav() {
     <Stack direction={"row"} spacing={4}>
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label}>
-          <NextLink
+          <Link
+            as={NextLink}
             p={2}
             href={navItem.href}
             fontSize={"sm"}
@@ -77,7 +79,7 @@ function DesktopNav() {
             }}
           >
             {navItem.label}
-          </NextLink>
+          </Link>
         </Box>
       ))}
     </Stack>

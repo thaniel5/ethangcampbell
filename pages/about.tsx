@@ -1,4 +1,4 @@
-import { Container, Heading, Stack, Text } from "@chakra-ui/react";
+import { Container, Heading, Link, Stack, Text } from "@chakra-ui/react";
 
 export default function About() {
   return (
@@ -24,6 +24,17 @@ export default function About() {
           Economics and Mathematics. I play a dozen instruments and sing, I have
           travelled to a dozen countries, and enjoy board games. I am married
           and have a wonderful son who is still a toddler.
+          <br />
+          <br />
+          This github repo for this site is located at{" "}
+          <Link
+            color={"teal.500"}
+            href={"https://github.com/thaniel5/ethangcampbell"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://github.com/thaniel5/ethangcampbell
+          </Link>
         </Text>
       </Stack>
     </Container>
