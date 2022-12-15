@@ -1,13 +1,14 @@
-import NextLink from "@/components/nextLink";
+import NextLink from "next/link";
 import {
   Box,
-  Heading,
-  Container,
-  Text,
   Button,
-  Stack,
-  Icon,
+  Container,
   createIcon,
+  Heading,
+  Icon,
+  Link,
+  Stack,
+  Text,
 } from "@chakra-ui/react";
 import { Caveat } from "@next/font/google";
 
@@ -37,6 +38,17 @@ export default function Home() {
           experiences. <br />
           Security and testing are always a high priority and included in all of
           my work.
+          <br />
+          <br />
+          The github repo for this site is located at{" "}
+          <Link
+            color={"teal.500"}
+            href={"https://github.com/thaniel5/ethangcampbell"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://github.com/thaniel5/ethangcampbell
+          </Link>
         </Text>
         <Stack
           direction={"column"}
@@ -45,7 +57,7 @@ export default function Home() {
           alignSelf={"center"}
           position={"relative"}
         >
-          <NextLink href={"weather"}>
+          <Link as={NextLink} href={"weather"}>
             <Button
               colorScheme={"green"}
               bg={"green.400"}
@@ -57,13 +69,13 @@ export default function Home() {
             >
               See Example
             </Button>
-          </NextLink>
+          </Link>
 
-          <NextLink href={"about"}>
+          <Link as={NextLink} href={"about"}>
             <Button variant={"link"} colorScheme={"blue"} size={"sm"}>
               About Me
             </Button>
-          </NextLink>
+          </Link>
 
           <Box display={{ base: "none", md: "block" }}>
             <Icon

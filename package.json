@@ -9,7 +9,7 @@
     "lint": "next lint",
     "format": "prettier --write .",
     "typecheck": "tsc --noEmit",
-    "precommit": "yarn run test && yarn run typecheck && yarn run lint && yarn run format"
+    "precommit": "npm run test && npm run typecheck && npm run lint && npm run format"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.11",
